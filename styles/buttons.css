@@ -2,7 +2,7 @@
     --btn-bg-color: var(--text-color-primary);
     --btn-color: var(--bg-color);
     border: 0;
-    background-color: transparent;
+
 
     display: flex;
     align-items: center;
@@ -11,7 +11,7 @@
 
     border-radius: .5rem;
 
-    font: var(--fw-md) var(-fs-base)/1.5rem var(--ff-sans);
+    font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
 
     cursor: pointer;
 
@@ -54,7 +54,7 @@
     &::after{
         content: attr(aria-label);
         background: var(--btn-bg-color);
-        --webkit-background-clip:text;
+        -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
         position: relative;
